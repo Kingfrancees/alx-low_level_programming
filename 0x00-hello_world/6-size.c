@@ -2,6 +2,7 @@
 
 /**
 * main = Entry Point
+* @void: parameter
 * Return: Always (0) SUCCESS
 */
 int main(void)
