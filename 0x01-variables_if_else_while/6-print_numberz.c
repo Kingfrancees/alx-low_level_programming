@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- * main - print all digists to base 10 starting from 0
- * return: (0) SUCCESS
- */
+  * main - Print all single digit numbers using only putchar
+  *
+  * Return: Always 0 (Success)
+  */
+
 int main(void)
 {
 	int x;
