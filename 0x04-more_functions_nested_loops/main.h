@@ -1,6 +1,8 @@
 #ifndef MAIN_H_INCLUDE
 #define MAIN_H_INCLUDE
 
+
+void print_number(int n);
 int _putchar(char c);
 void print_triangle(int size);
 void print_square(int size);
