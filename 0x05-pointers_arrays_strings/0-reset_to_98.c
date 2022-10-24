@@ -1,6 +1,7 @@
 #include "main.h"
 /*
- * void reset_to_98 - rest the value of an intiger to 98
+ *@n: parameter targeted
+ *void reset_to_98 - rest the value of an intiger to 98
  *return: nothing
  */
 
