@@ -1,21 +1,55 @@
+// C program to print reverse of words in
+// a string.
 #include <stdio.h>
+#include <string.h>
+ 
 
-void swap_int(int *, int *);
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
+void printReverse(char str[])
 {
-	int a;
-	int b;
 
-	a = 1024;
-	b = -4096;
-	printf("%d, %d\n", a, b);
-	swap_int(&a, &b);
-	printf("%d, %d\n", a, b);
-	return (0);
+	    int length = strlen(str);
+	     
+
+	        // Traverse string from end
+
+	        int i;
+
+		    for (i = length - 1; i >= 0; i--) {
+
+			            if (str[i] == ' ') {
+					     
+
+					                // putting the NULL character at the
+
+					                // position of space characters for
+
+					                // next iteration.
+
+					                str[i] = '\0';
+							 
+
+							            // Start from next character
+
+							            printf("%s ", &(str[i]) + 1);
+
+								            }
+
+				        }
+		     
+
+		        // printing the last word
+
+		        printf("%s", str);
+}
+ 
+// Driver code
+
+int main()
+{
+
+	    char str[] = "I AM A GEEK";
+
+	        printReverse(str);
+
+		    return 0;
 }
